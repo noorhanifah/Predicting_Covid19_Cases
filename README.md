@@ -16,33 +16,29 @@ This model run using Python programming and the libraries available. The trainin
 To achieve the objective of this project, deep learning model using LSTM neural network aprroach is used. LSTMs (long short-term memory) is one of the most and well known subset of recurrent neural networks. It is a type of artificial neural network designed to recognize patterns in sequences of data, such as numerical times series data which use in this project.
 
 ###### The detail architecture of this model shown as below:
-![Model pyt](https://github.com/noorhanifah/Categorizing-Articles-NLP/blob/main/Model_arch.PNG)
+![Model pyt](https://github.com/noorhanifah/Predicting_Covid19_Cases/blob/main/Model_arch1.PNG)
 
-![Model](https://github.com/noorhanifah/Categorizing-Articles-NLP/blob/main/Plot_model_arch.png)
+![Model](https://github.com/noorhanifah/Predicting_Covid19_Cases/blob/main/Model_arch.png)
 
-## Accuracy
-After cleaning and training the data, this model acheive up to 0.8 accuracy. 
+## Accuracy 
 
-###### Below shows the training model evalution which shows 95& accuracy.
-![Training model evaluation](https://github.com/noorhanifah/Categorizing-Articles-NLP/blob/main/model_evaluation.PNG)
+###### Below shows the training model evalution..
+![Training model evaluation](https://github.com/noorhanifah/Predicting_Covid19_Cases/blob/main/model_evaluation.PNG)
 
-###### Based on the classification report this model give 0.95 accuracy with f1-score of more than 0.9. This shows that this model is able to predict the all five outcomes expected from this model. Therefore, the ability to categorize articles into Sport, Tech, Business, Entertainment and Politics can be achieve throught this model.
-![Correlation](https://github.com/noorhanifah/Categorizing-Articles-NLP/blob/main/classification_report.PNG)
+###### The lowest MAPE (mean absolute percentage error) that this model can achieve is 9.3%. Since MAPE shows how far the model’s predictions are off from their corresponding outputs, the lowest the MAPE the closest the model to the test data. Therefore, this model has the ability to forcast the new cases based only the 30 days data. 
+![MAPE](https://github.com/noorhanifah/Predicting_Covid19_Cases/blob/main/calculated_mape.PNG)
 
-###### The best model out of all the aproach is Logistic Regression with Standard Scalar as they give a score of 0.824. Thus, will be selected for this project. 
-![Best Model](https://github.com/noorhanifah/Heart-Attack-Prediction-Using-Machine-Learning/blob/main/Score/best_model.PNG)
+###### Below shows a plotted graph showing the actual versus the predicted trend. From this graph, we can see that the blue line (predicted) and the red line (actual) shows a similar trend of up and down. 
+![Training vs actual](https://github.com/noorhanifah/Predicting_Covid19_Cases/blob/main/predicted_vs_actual.png)
 
-###### Based on the classification report this model give 0.82 accuracy with f1-score of 0.82 and 0.83. This shows that this model is able to predict the two outcome expected from this model. Therefore, to know wheather someone has the possibility of having heart attack or not can be achieve throught this model.
-![CR](https://github.com/noorhanifah/Heart-Attack-Prediction-Using-Machine-Learning/blob/main/Score/classification_report.PNG)
+###### TensorBoard also is used to plot the all the training process of this model. 
+![TensorBoard](https://github.com/noorhanifah/Predicting_Covid19_Cases/blob/main/Tensorboard/Tensorboard.PNG)
 
-###### The training and the validation accuracy of this model can be observed from the plotted graph. From the graph, this model is able to learn at some point.
-![Training and validation accuracy](https://github.com/noorhanifah/Categorizing-Articles-NLP/blob/main/validation_training_accuracy.PNG)
+###### All the MAPE training process of this model:
+![TensorBoard MAPE](https://github.com/noorhanifah/Predicting_Covid19_Cases/blob/main/Tensorboard/MAPE.PNG)
 
-###### TensorBoard also is used to plot the all the training graph. 
-![TensorBoard](https://github.com/noorhanifah/Categorizing-Articles-NLP/blob/main/Tensorboard/Tensorboard.PNG)
-
-###### The accuracy graph shown on TensorBoard:
-![TensorBoard Accuracy](https://github.com/noorhanifah/Categorizing-Articles-NLP/blob/main/Tensorboard/tensorboard_accuracy.PNG)
+###### The Tensorboard graph shows the MAPE at each epoch:
+![TensorBoard Current MAPE](https://github.com/noorhanifah/Predicting_Covid19_Cases/blob/main/Tensorboard/mape_current_training.PNG)
 
 ## A little discussion
 This model is able to categorize articles and the training also gives a high accuracy of more than 90% and a high and balance f-1 score among the outcome, thus give a little sense of great achivement. Unfortunately for this model, it actually overfit. Overfitting happens when a model learns the detail and noise in the training data. The noise or random fluctuations in the training data is picked up and learned as concepts by this model making it unable to categorize new data correctly.
