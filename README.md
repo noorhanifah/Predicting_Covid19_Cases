@@ -7,7 +7,7 @@ The year 2020 was a catastrophic year for humanity. Pneumonia of unknown aetiolo
 Over time, the number of patiences are increasing burdening the health care system and the professional in Malaysia.
 To overcome this problem, understanding the nature of the pandemic itself and forecasting the trend of Covid-19 cases are the crucial. Reliability of the forecasting trends of the COVID-19 spread can help predict the pandemic outbreak and increase the readiness of the health care system in tackling the pandemic and providing enough medical support. Moreover, accurate forecasting can provide feedback on whether the undertaken policy is effective in alleviating the stress on the healthcare system in this country. It at the same time provide a room for mitigation strategies and policies to be evaluated using the prediction model.   
 
-The objective of this project is to predict new cases of Covid-19 in Malaysia based on the past 30 days of cases.
+The objective of this project is to predict new cases of Covid-19 in Malaysia based on the past 30 days of cases with mean absolute percentage error(MAPE) less or equal to 10%.
 
 ## Running the Project
 This model run using Python programming and the libraries available. The training and validation graph are plotted using Tensorboard. TensorFlow library is used to develop and train this model.
@@ -21,6 +21,8 @@ To achieve the objective of this project, deep learning model using LSTM neural 
 ![Model](https://github.com/noorhanifah/Predicting_Covid19_Cases/blob/main/Model_arch.png)
 
 ## Accuracy 
+
+The goal of this model is to achieve the MAPE less or equal to 10%. Thus, in order to achieve the goal we use 128 epochs in the neural network and manage to achive MAPE less than 10%.
 
 ###### Below shows the training model evalution..
 ![Training model evaluation](https://github.com/noorhanifah/Predicting_Covid19_Cases/blob/main/model_evaluation.PNG)
